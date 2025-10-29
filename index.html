@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>TO-DO APP</title>
+
+  <!-- روابط مكتبات الخطوط -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- مكتبة الأيقونات الأساسية -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- مكتبة الأيقونات outlined (اللي فيها calendar_today وغيره) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <!-- خط Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Badeen+Display&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div style="margin-top: 50px;">
+    <div id="content">
+      <!-- header -->
+      <div id="header">
+        <h1>My Tasks</h1>
+        <button id="add-btn" class="circle">
+          <span class="material-icons">add</span>
+        </button>
+      </div>
+      <!-- tasks-container -->
+<div id="tasks-container">
+      <!-- task -->
+       <div class="task">
+        <div>
+          <h3>Read book</h3>
+          <div class="due">
+            <span class="material-icons">calendar_today</span>
+            <span class="due-text">due date: 2024-06-30</span>
+          </div>
+        </div>
+
+        <div id="action">
+          <button class="circle" style="background-color: red; color: white;">
+            <span class="material-icons">delete</span>
+          </button>
+          <button class="circle" style="background-color: rgb(141, 216, 186); color: white;">
+            <span class="material-icons">check_circle_outline</span>
+          </button>
+          <button class="circle" style="background-color: rgb(124, 195, 224); color: white;">
+            <span class="material-icons">edit</span>
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

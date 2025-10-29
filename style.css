@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background: #270230;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+#content{
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(222, 216, 216, 0.1);
+    width: 900px;
+    margin-top: 3px;
+    height: auto;
+    min-height: 400px;
+    position: relative;
+    
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.h1{
+    margin-bottom: 20px;
+    margin-top:3px ;
+    display: inline;
+}
+#add-btn{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+border-bottom: solid 2px #ccc;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.done{
+    background-color: rgba(158, 253, 160);
+}
+
+.task h3 {
+    font-size: 20px;
+    margin: 0;
+}
+.task span {
+    font-size: 16px;
+    color: #666;
+    display:inline;
+}
+#action{
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+.task:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(226, 219, 161, 0.762);
+    background-color: #f0f0f0;
+}
+
+/* new: align calendar icon beside the date */
+.due {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+    color: #666;
+    font-size: 14px;
+}
+
+.due .material-icons {
+    font-size: 18px;
+    color: #666;
+    display: inline-block;
+    line-height: 1;
+}
+
+.due-text {
+    display: inline-block;
+    color: #666;
+}
